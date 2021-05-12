@@ -1,0 +1,44 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <h2>
+        Construct a binary tree from inorder and preorder traversal</h2>
+    </head>
+    <body>
+        <p>
+            The idea is to start with the root node, which would be the first item in the preorder sequence,
+            and find the boundary of its left and right subtree in the inorder sequence. 
+            To find the boundary, search for the index of the root node in the inorder sequence. 
+            All keys before the root node in the inorder sequence become part of the left subtree, 
+            and all keys after the root node become part of the right subtree. 
+            Repeat this recursively for all nodes in the tree and construct the tree in the process.
+        </p>
+        <p>
+            For Example
+            Inorder  : { 4, 2, 1, 7, 5, 8, 3, 6 }
+            Preorder : { 1, 2, 4, 3, 5, 7, 8, 6 }
+        </p>
+        <p>The root will be the first element in the preorder sequence, i.e., <code>1</code>. 
+            Next, locate the index of the root node in the inorder sequence. Since <code>1</code> is 
+            the root node, all nodes before <code>1</code> in the inorder sequence must be included in 
+            the left subtree, i.e., <code>{4, 2}</code> and all the nodes after <code>1</code> must be 
+            included in the right subtree, i.e., <code>{7, 5, 8, 3, 6}</code>. Now the problem is reduced to 
+            building the left and right subtrees and linking them to the root node.
+        </p>
+        <pre>
+            It should look like :
+               1
+             /   \
+            /     \
+           2       3
+          /       / \
+         /       /   \
+        4       5     6
+               / \
+              /   \
+             7     8
+        </pre>
+    </body>
+</html>
+
