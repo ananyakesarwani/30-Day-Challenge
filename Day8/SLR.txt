@@ -1,0 +1,17 @@
+Simple Linear Regression
+
+Y= b0 + b1x
+
+1.	Dependent and Independent Variable
+        Y in above equation is dependent variable and X is Independent Variable. B is a coefficient which is a relation constant of X and Y.
+
+2.	How to find Best Fitting Line
+        Find minimum sum of squares of difference to draw a straight line.
+        Steps for SLR :
+            a.	Importing the libraries
+            b.	Importing the dataset
+            c.	Splitting the dataset into the Training set and Test set
+            d.	Training the Simple Linear Regression model on the Training set
+            e.	Predicting the Test set results
+            f.	Visualising the Training set results
+            g.	Visualising the Test set results
