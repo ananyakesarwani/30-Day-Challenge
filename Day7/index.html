@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+    <div id="container">
+        <h1 id="title">Work From Home Survey Form</h1>
+        <p id="description">Take a Survey to let us know how Work From Home in past 1 year affected your Work-Life
+            Balance</p>
+        <form id="survey-form">
+            <div class="form-content"> <label class="input-tags" id="name-label" for="name">Name</label>
+                <br />
+                <input class="input-box" type="text" name="name" id="name" required placeholder="Enter Name">
+            </div>
+            <div class="form-content">
+                <label class="input-tags" id="email-label" for="email">Email</label><br />
+                <input class="input-box" type="email" required id="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="form-content">
+                <label class="input-tags" id="number-label" name="number">Age</label><br />
+                <input class="input-box" type="number" id="number" name="number" placeholder="Enter Age" min=10 max=99>
+            </div>
+            <div class="form-content">
+                <p class="input-tags">Which industry you work in</p>
+                <select id="dropdown" name="industry" required>
+                    <option disabled selected value>Select Industry</option>
+                    <option value="aviation">Aviation</option>
+                    <option value="art">Art</option>
+                    <option value="business">Business</option>
+                    <option value="education">Education</option>
+                    <option value="law">Law Enforcement</option>
+                    <option value="media">Media</option>
+                    <option value="medical">Medical</option>
+                    <option value="technology">Technology</option>
+                </select>
+            </div>
+            <div class="form-component">
+                <p class="input-tags">Would you prefer working from home one more year?</p>
+                <label class="input-tags">
+                    <input name="choice" value="definitely" type="radio" checked>Definitely
+                </label>
+                <label class="input-tags">
+                    <input name="choice" value="maybe" type="radio">Maybe
+                </label>
+                <label class="input-tags">
+                    <input name="choice" value="not sure" type="radio">Not Sure
+                </label>
+            </div>
+            <div class="form-component">
+                <p class="input-tags">Select what you liked about WFH</p>
+                <label class="input-tags">
+                    <input type='checkbox' name="box" value="longer sleep time" class="checkboxes">Longer Sleep
+                    Time</label><br />
+                <label class="input-tags">
+                    <input type='checkbox' name="box" value="eat whenever" class="checkboxes">Eat Whenever</label><br />
+                <label class="input-tags">
+                    <input type='checkbox' name="box" value="minimum maintenance" class="checkboxes">Minimum
+                    Maintenance</label><br />
+                <label class="input-tags">
+                    <input type='checkbox' name="box" value="more time with family" class="checkboxes">More Time With
+                    Family</label><br />
+            </div>
+            <div class="form-component">
+                <p class="input-tags">Any comments or suggestions?</p>
+                <textarea class="input-box" id="comments" placeholder="Enter Comments Here..."></textarea>
+            </div>
+            <div class="form-component">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
